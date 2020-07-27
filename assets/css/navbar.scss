@@ -1,5 +1,11 @@
 .navbar {
   padding: 9px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
 
   @media (min-width: 1024px) {
     padding: 20px 50px;
@@ -8,18 +14,79 @@
     padding: 50px 100px;
   }
 
-  .nav-logo {
-    max-width: 178px;
-    @media (min-width: 1024px) {
-      max-width: 250px;
+  .navbar-brand {
+    z-index: 2;
+
+    .nav-logo {
+      z-index: 3;
+      max-width: 178px;
+      @media (min-width: 768px) and (max-width: 1200px) {
+        max-width: 130px;
+      }
+      @media (min-width: 1200px) {
+        max-width: 250px;
+      }
+      @media (min-width: 2000px) {
+        max-width: 400px;
+      }
     }
-    @media (min-width: 2000px) {
-      max-width: 400px;
+
+    &:nth-of-type(2) {
+      display: none;
     }
+    &:last-of-type{
+      display: none;
+    }
+  }
+
+  .navbar-toggler {
+    z-index: 2;
+
+    .icon-burger{
+      display: block;
+    }
+
+    .icon-burger-after-scroll{
+      display: none;
+    }
+
+    &:focus {
+      padding: 0;
+      outline: none;
+    }
+  }
+
+  .navbar-toggler[aria-expanded="false"] {
+    .icon-close {
+      display: none;
+    }
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    .icon-close {
+      display: block;
+    }
+
+    .icon-burger, .icon-burger-after-scroll {
+      display: none;
+    }
+  }
+
+  .navbar-toggler[aria-expanded="true"] ~ .navbar-brand:first-of-type, .navbar-toggler[aria-expanded="true"] ~ .navbar-brand:last-of-type {
+    display: none;
+  }
+
+  .navbar-toggler[aria-expanded="true"] ~ .navbar-brand:nth-of-type(2){
+    display: block;
   }
 
   .navbar-collapse {
     .navbar-nav {
+      @media (min-width: 768px) {
+        flex-grow: 1;
+        align-items: center;
+      }
+
       .nav-item {
         .nav-link {
           font-family: "Source Sans Pro", sans-serif;
@@ -28,17 +95,63 @@
           letter-spacing: 0.05em;
           border-bottom: 3px solid transparent;
           padding: 2px 0;
-          &:hover{
+          color: #fff;
+
+          @media (max-width: 767px) {
+            font-family: "Muli", sans-serif;
+            font-weight: 900;
+            font-size: 38px;
+            line-height: 110%;
+            color: #467296;
+            margin-bottom: 20px;
+          }
+
+          @media (min-width: 768px) {
+            text-transform: uppercase;
+          }
+
+          @media (min-width: 768px) and (max-width: 1200px) {
+            font-size: 12px;
+          }
+
+          @media (min-width: 2000px) {
+            font-size: 25px;
+          }
+
+          &:hover {
             border-color: #fff;
+          }
+        }
+
+        &:last-of-type {
+          @media (max-width: 767px) {
+            margin-bottom: 117px;
           }
         }
       }
     }
+
+    @media (max-width: 767px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      min-height: 100vh;
+    }
+
+    &.collapsing, &.show {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: start;
+      padding: 40px;
+    }
   }
 
-  .btn-connect{
+  .btn-connect {
     padding: 20px 40px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 29px;
     color: #467296;
     font-family: "Muli", sans-serif;
@@ -47,10 +160,138 @@
     line-height: 18px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+    border: 2px solid transparent;
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: transparent;
+      border-color: white;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (max-width: 767px) {
+      background: #55A6D9;
+      border-radius: 35px;
+      font-family: "Muli", sans-serif;
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      width: 270px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: 12px;
+      padding: 7px 20px;
+    }
+
+    @media (min-width: 2000px) {
+      font-size: 23px;
+      padding: 30px 60px;
+    }
+  }
+
+  .btn-connect-outline{
+    display: none;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #467296;
+    border: 1px solid #467296;
+    border-radius: 29px;
+    padding: 8px 15px;
+    height: 30px;
     &:focus{
       outline: none;
       box-shadow: none;
     }
   }
 
+  &.scrolled {
+    background-color: #fff;
+    box-shadow: 0 15px 20px rgba(70, 114, 150, 0.1);
+
+    .navbar-brand {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:nth-of-type(2){
+        display: block;
+      }
+
+      &:last-of-type{
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+
+      .navbar-toggler[aria-expanded="false"] {
+        .icon-burger{
+          display: none;
+        }
+
+        .icon-burger-after-scroll {
+          display: block;
+        }
+      }
+
+      .navbar-toggler[aria-expanded="false"] ~ .navbar-brand:nth-of-type(2){
+        display: none;
+      }
+
+      .navbar-toggler[aria-expanded="true"] ~ .navbar-brand:nth-of-type(2){
+        display: block;
+      }
+    }
+
+    @media (min-width: 768px){
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              color: #5A5A5A;
+
+              &:hover {
+                border-color: #5A5A5A;
+              }
+            }
+          }
+        }
+
+        &.collapsing, &.show {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: start;
+          padding: 40px;
+        }
+      }
+
+      .btn-connect {
+        background-color: #467296;
+        color: #fff;
+
+        &:hover {
+          color: #467296;
+          background-color: transparent;
+          border-color: #467296;
+        }
+      }
+    }
+
+    .btn-connect-outline{
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
 }

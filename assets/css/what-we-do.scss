@@ -10,3 +10,13 @@ header{
     min-height: 700px;
   }
 }
+
+.banner{
+  background-color: #29353D;
+  background-image: url(../images/what-we-do/logo-pattern.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: top right;
+  padding: 85px 80px;
+}

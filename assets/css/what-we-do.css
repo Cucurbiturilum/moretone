@@ -1,3 +1,68 @@
+.navbar {
+  padding: 9px 20px;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+}
+@media (min-width: 2000px) {
+  .navbar {
+    padding: 50px 100px;
+  }
+}
+.navbar .nav-logo {
+  max-width: 178px;
+}
+@media (min-width: 1024px) {
+  .navbar .nav-logo {
+    max-width: 250px;
+  }
+}
+@media (min-width: 2000px) {
+  .navbar .nav-logo {
+    max-width: 400px;
+  }
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  border-bottom: 3px solid transparent;
+  padding: 2px 0;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-color: #fff;
+}
+.navbar .btn-connect {
+  padding: 20px 40px;
+  background: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.navbar .btn-connect:focus {
+  outline: none;
+  box-shadow: none;
+}
 
+header {
+  background-image: url(../images/what-we-do/header-bg-image.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+@media (min-width: 2000px) {
+  header {
+    min-height: 700px;
+  }
+}
 
 /*# sourceMappingURL=what-we-do.css.map */

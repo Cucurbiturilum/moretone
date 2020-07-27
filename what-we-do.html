@@ -11,45 +11,49 @@
     <title>Moretonblue | What We Do</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#">
-        <img src="assets/images/logo.png" alt="logo" class="nav-logo img-fluid">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top justify-content-between">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="logo" class="nav-logo img-fluid">
+        </a>
+        <a class="navbar-brand d-none" href="#">
+            <img src="assets/images/logo-after-scroll.png" alt="logo" class="nav-logo img-fluid">
+        </a>
+        <a class="navbar-brand d-none" href="#">
+            <img src="assets/images/logo-mobile-after-scroll.png" alt="logo" class="nav-logo img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 1.26316C0 0.565535 0.565535 0 1.26316 0H23.7368C24.4345 0 25 0.565535 25 1.26316C25 1.96078 24.4345 2.52632 23.7368 2.52632H1.26316C0.565534 2.52632 0 1.96078 0 1.26316ZM0 14.7368C0 14.0392 0.565535 13.4737 1.26316 13.4737H23.7368C24.4345 13.4737 25 14.0392 25 14.7368C25 15.4345 24.4345 16 23.7368 16H1.26316C0.565534 16 0 15.4345 0 14.7368ZM1.26316 6.73685C0.565535 6.73685 0 7.30238 0 8C0 8.69763 0.565534 9.26316 1.26316 9.26316H23.7368C24.4345 9.26316 25 8.69763 25 8C25 7.30238 24.4345 6.73685 23.7368 6.73685H1.26316Z"
+                      fill="white"/>
+            </svg>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item active">
+                    <a class="nav-link text-uppercase text-white" href="#">What we do <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" href="#">Our Approach</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn btn-connect">
+                Let’s Connect
+            </button>
+        </div>
+    </nav>
+</header>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

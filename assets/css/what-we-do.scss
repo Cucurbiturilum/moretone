@@ -1,1 +1,12 @@
 @import "navbar";
+
+header{
+  background-image: url(../images/what-we-do/header-bg-image.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  @media (min-width: 2000px) {
+    min-height: 700px;
+  }
+}

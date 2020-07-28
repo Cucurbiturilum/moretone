@@ -1,4 +1,48 @@
-@import "navbar";
+@import "navbar", "footer";
+
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: white;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  @media (min-width: 2000px) {
+    font-size: 23px;
+    padding: 30px 60px;
+  }
+}
 
 header {
   background-image: url(../images/what-we-do/header-bg-image.png);
@@ -19,6 +63,7 @@ header {
   background-size: contain;
   background-position: top right;
   padding: 50px 20px;
+  margin-bottom: 140px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
     padding: 60px 50px;
@@ -30,6 +75,7 @@ header {
 
   @media (min-width: 1400px) {
     padding: 85px 80px;
+    margin-bottom: 115px;
   }
 
   .banner-title {
@@ -57,7 +103,7 @@ header {
     color: #77B8E1;
     margin-bottom: 0;
 
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       margin-bottom: 30px;
     }
 
@@ -70,7 +116,7 @@ header {
     }
   }
 
-  .banner-text{
+  .banner-text {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -82,6 +128,231 @@ header {
 
     @media (min-width: 1300px) {
       font-size: 30px;
+    }
+  }
+}
+
+.services {
+  background-color: #467296;
+  border-radius: 10px;
+  padding: 21px 28px;
+  background-image: url(../images/what-we-do/pattern.png);
+  -webkit-background-size: contain;
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  margin-bottom: 160px;
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 50px 30px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 50px 75px;
+    margin: 0 70px 150px 70px;
+  }
+
+  .left-side {
+    .media {
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 35px;
+      }
+
+      .media-body {
+        .media-title {
+          font-family: "Muli", sans-serif;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 120%;
+          color: #FFFFFF;
+          text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+
+          @media (min-width: 768px) and (max-width: 1200px) {
+            font-size: 39px;
+          }
+
+          @media (min-width: 1200px) {
+            font-size: 48px;
+          }
+        }
+      }
+    }
+
+    .main-text {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 150%;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      max-width: 490px;
+      @media (min-width: 768px) and (max-width: 992px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .list-unstyled {
+      margin-top: 20px;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        @media (max-width: 767px) {
+          margin-top: 0;
+        }
+      }
+
+      &:last-of-type {
+        @media (max-width: 767px) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .list-item {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        @media (min-width: 768px) and (max-width: 1000px) {
+          font-size: 14px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    .img-services {
+      position: relative;
+      top: -100px;
+      @media (max-width: 676px) {
+        height: 305px;
+        overflow: hidden;
+      }
+    }
+
+    .btn-connect {
+      margin-top: -50px;
+    }
+  }
+}
+
+.services:nth-of-type(2n) {
+  background-color: #29353D;
+}
+
+.drive {
+  background: linear-gradient(180deg, #55A6D9 0%, #467296 100%);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 90px;
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 130px;
+  }
+
+  .row {
+    background-image: url("../images/what-we-do/logo-pattern-big.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 80px 20px;
+
+    @media (min-width: 768px) and (max-width: 1000px) {
+      padding: 80px 50px;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1200px) {
+      padding: 80px 70px;
+      -webkit-background-size: 30%;
+      background-size: 30%;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 85px 100px;
+      -webkit-background-size: auto;
+      background-size: auto;
+    }
+
+    .drive-title {
+      font-family: "Muli", sans-serif;
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 110%;
+      text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+      margin-bottom: 30px;
+      @media (min-width: 768px) and (max-width: 1000px) {
+        font-size: 47px;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: 1000px) and (max-width: 1200px) {
+        font-size: 55px;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 60px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .main-text {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 160%;
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) and (max-width: 1000px) {
+        font-size: 22px;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: 1000px) and (max-width: 1200px) {
+        font-size: 24px;
+        margin-bottom: 50px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 26px;
+        max-width: 850px;
+        margin-bottom: 60px;
+      }
+    }
+
+    .btn-connect {
+      @media (min-width: 768px) and (max-width: 992px) {
+        padding: 12px 30px;
+        width: auto;
+      }
+
+      @media (min-width: 1200px) {
+        padding: 25px 80px;
+        border-radius: 45px;
+      }
     }
   }
 }

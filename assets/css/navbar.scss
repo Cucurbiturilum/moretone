@@ -234,6 +234,12 @@
 
     @media (max-width: 767px) {
 
+      .btn-connect-outline{
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
+
       .navbar-toggler[aria-expanded="false"] {
         .icon-burger{
           display: none;
@@ -250,6 +256,10 @@
 
       .navbar-toggler[aria-expanded="true"] ~ .navbar-brand:nth-of-type(2){
         display: block;
+      }
+
+      .navbar-toggler[aria-expanded="true"] ~ .btn-connect-outline{
+        display: none;
       }
     }
 
@@ -288,10 +298,5 @@
       }
     }
 
-    .btn-connect-outline{
-      @media (max-width: 767px) {
-        display: block;
-      }
-    }
   }
 }

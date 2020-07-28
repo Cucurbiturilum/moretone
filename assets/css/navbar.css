@@ -215,6 +215,11 @@
 .navbar.scrolled .navbar-brand:last-of-type {
   display: block;
 }
+@media (max-width: 767px) and (max-width: 767px) {
+  .navbar.scrolled .btn-connect-outline {
+    display: block;
+  }
+}
 @media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=false] .icon-burger {
     display: none;
@@ -222,11 +227,20 @@
   .navbar.scrolled .navbar-toggler[aria-expanded=false] .icon-burger-after-scroll {
     display: block;
   }
+}
+@media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=false] ~ .navbar-brand:nth-of-type(2) {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=true] ~ .navbar-brand:nth-of-type(2) {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar.scrolled .navbar-toggler[aria-expanded=true] ~ .btn-connect-outline {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -251,11 +265,6 @@
     color: #467296;
     background-color: transparent;
     border-color: #467296;
-  }
-}
-@media (max-width: 767px) {
-  .navbar.scrolled .btn-connect-outline {
-    display: block;
   }
 }
 

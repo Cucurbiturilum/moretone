@@ -215,6 +215,11 @@
 .navbar.scrolled .navbar-brand:last-of-type {
   display: block;
 }
+@media (max-width: 767px) and (max-width: 767px) {
+  .navbar.scrolled .btn-connect-outline {
+    display: block;
+  }
+}
 @media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=false] .icon-burger {
     display: none;
@@ -222,11 +227,20 @@
   .navbar.scrolled .navbar-toggler[aria-expanded=false] .icon-burger-after-scroll {
     display: block;
   }
+}
+@media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=false] ~ .navbar-brand:nth-of-type(2) {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .navbar.scrolled .navbar-toggler[aria-expanded=true] ~ .navbar-brand:nth-of-type(2) {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar.scrolled .navbar-toggler[aria-expanded=true] ~ .btn-connect-outline {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -253,11 +267,6 @@
     border-color: #467296;
   }
 }
-@media (max-width: 767px) {
-  .navbar.scrolled .btn-connect-outline {
-    display: block;
-  }
-}
 
 header {
   background-image: url(../images/what-we-do/header-bg-image.png);
@@ -279,7 +288,80 @@ header {
   -webkit-background-size: contain;
   background-size: contain;
   background-position: top right;
-  padding: 85px 80px;
+  padding: 50px 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    padding: 60px 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .banner {
+    padding: 70px 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .banner {
+    padding: 85px 80px;
+  }
+}
+.banner .banner-title {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+  color: #FFFFFF;
+  text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .banner .banner-title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .banner .banner-title {
+    font-size: 100px;
+  }
+}
+.banner .banner-subtitle {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  color: #77B8E1;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .banner .banner-subtitle {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .banner .banner-subtitle {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1300px) {
+  .banner .banner-subtitle {
+    font-size: 30px;
+  }
+}
+.banner .banner-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .banner .banner-text {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1300px) {
+  .banner .banner-text {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=what-we-do.css.map */

@@ -1,6 +1,6 @@
 @import "navbar";
 
-header{
+header {
   background-image: url(../images/what-we-do/header-bg-image.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -11,12 +11,77 @@ header{
   }
 }
 
-.banner{
+.banner {
   background-color: #29353D;
   background-image: url(../images/what-we-do/logo-pattern.png);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   background-position: top right;
-  padding: 85px 80px;
+  padding: 50px 20px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 60px 50px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    padding: 70px 60px;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 85px 80px;
+  }
+
+  .banner-title {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 60px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 100px;
+    }
+  }
+
+  .banner-subtitle {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    color: #77B8E1;
+    margin-bottom: 0;
+
+    @media (max-width: 767px){
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 30px;
+    }
+  }
+
+  .banner-text{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 30px;
+    }
+  }
 }

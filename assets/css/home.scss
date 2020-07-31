@@ -1,1 +1,140 @@
 @import "navbar", "footer";
+
+header {
+  background-image: url(../images/home/home-header-bg.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  @media (max-width: 520px){
+    min-height: 300px;
+  }
+}
+
+.banner {
+  background-color: #55A6D9;
+  padding: 0 20px 20px 20px;
+
+  @media (min-width: 1200px){
+    padding: 80px 80px 0 80px;
+  }
+
+
+  .banner-title {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+    position: relative;
+    font-size: 43px;
+    line-height: 110%;
+    top: -53px;
+
+    @media (min-width: 520px){
+      font-size: 60px;
+      top: -75px;
+    }
+
+    @media (min-width: 660px) {
+      font-size: 70px;
+      top: -85px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 47px;
+      line-height: 120%;
+      top: -60px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 70px;
+      top: -90px;
+    }
+
+    @media (min-width: 1200px){
+      top: -190px;
+      font-size: 80px;
+    }
+
+    @media (min-width: 1440px){
+      top: -210px;
+      font-size: 100px;
+    }
+  }
+
+  .banner-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @media (max-width: 767px) {
+      &:first-of-type{
+        margin-top: -23px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      &:first-of-type{
+        padding-top: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      font-size: 26px;
+    }
+
+    @media (min-width: 1200px){
+      font-size: 30px;
+      &:first-of-type{
+        padding-top: 0;
+      }
+    }
+  }
+
+  .scroll{
+    margin-top: 30px;
+    position: relative;
+    min-height: 90px;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    .arrow{
+      margin-top: 16px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      span{
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        margin: -5px;
+        animation: animate 3s infinite;
+        &:nth-child(2){
+          animation-delay: -0.2s;
+        }
+      }
+      @keyframes animate {
+        0%{
+          opacity: 0;
+          transform: rotate(45deg) translate(-20px,-20px);
+        }
+        50%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+          transform: rotate(45deg) translate(20px,20px);
+        }
+      }
+    }
+  }
+}

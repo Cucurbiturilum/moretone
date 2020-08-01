@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background-color: transparent;
   transition: all 0.5s ease-in-out;
 }
@@ -509,6 +509,9 @@ header {
   .banner .banner-text:first-of-type {
     margin-top: -23px;
   }
+  .banner .banner-text:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 768px) {
   .banner .banner-text {
@@ -572,6 +575,113 @@ header {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.mission .mission-description {
+  background-image: url(../images/home/logo-pattern.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  -webkit-background-size: 75%;
+  background-size: 75%;
+  padding: 75px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mission .mission-description .title {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 120%;
+  color: #29353D;
+  margin-bottom: 30px;
+}
+.mission .mission-description .text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  color: #688DA3;
+  margin-bottom: 50px;
+}
+.mission .mission-description .btn-outline-primary {
+  padding: 16px 25px;
+  border: 1px solid #42708C !important;
+  border-radius: 35px;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #467296;
+}
+.mission .mission-description .btn-outline-primary:hover {
+  background-color: #42708C !important;
+  color: #fff !important;
+}
+@media (min-width: 768px) {
+  .mission .mission-description {
+    padding: 75px 20px;
+  }
+  .mission .mission-description .title {
+    font-size: 45px;
+  }
+  .mission .mission-description .text {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .mission .mission-description {
+    padding: 75px;
+  }
+  .mission .mission-description .title {
+    font-size: 55px;
+  }
+  .mission .mission-description .text {
+    max-width: 400px;
+    font-size: 25px;
+  }
+  .mission .mission-description .btn-outline-primary {
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .mission .mission-description {
+    padding: 160px 0 130px 190px;
+  }
+  .mission .mission-description .title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .mission .mission-description .text {
+    font-size: 26px;
+    max-width: 410px;
+    margin-bottom: 80px;
+  }
+}
+.mission .mission-image {
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .mission .mission-image {
+    top: 50px;
+    position: relative;
+  }
+}
+@media (min-width: 1024px) {
+  .mission .mission-image {
+    position: relative;
+    top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .mission .mission-image {
+    position: relative;
+    top: 89px;
   }
 }
 

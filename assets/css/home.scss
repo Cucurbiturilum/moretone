@@ -146,13 +146,8 @@ header {
   }
 }
 
-.mission {
+.mission, .we-do {
   .mission-description {
-    background-image: url(../images/home/logo-pattern.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    -webkit-background-size: 75%;
-    background-size: 75%;
     padding: 75px 5px;
     display: flex;
     flex-direction: column;
@@ -195,7 +190,7 @@ header {
     }
 
     @media (min-width: 768px) {
-      padding: 75px 20px;
+      padding: 75px 20px 50px 20px;
       .title {
         font-size: 45px;
       }
@@ -208,7 +203,7 @@ header {
     @media (min-width: 1024px) {
       padding: 75px;
       .title {
-        font-size: 55px;
+        font-size: 50px;
       }
 
       .text {
@@ -243,18 +238,132 @@ header {
   .mission-image {
     z-index: 2;
     @media (min-width: 768px) {
-      top: 50px;
-      position: relative;
-    }
-
-    @media (min-width: 1024px) {
-      position: relative;
       top: 70px;
+      position: relative;
     }
 
     @media (min-width: 1200px) {
       position: relative;
       top: 89px;
     }
+  }
+}
+
+.mission {
+  .mission-description {
+    background-image: url(../images/home/logo-pattern.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+  }
+}
+
+.we-do {
+  background-color: #29353D;
+  padding: 20px;
+
+  .mission-description {
+    .title {
+      color: #55A6D9;
+    }
+
+    .text {
+      color: #FFFFFF;
+    }
+
+    .btn-outline-primary {
+      border-color: #55A6D9 !important;
+      color: #55A6D9 !important;
+
+      &:hover {
+        background-color: #55A6D9 !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-stage-outer {
+      .owl-stage {
+        padding-left: 0 !important;
+
+        .owl-item {
+          padding-left: 20px;
+          padding-bottom: 20px;
+
+          img {
+            width: fit-content;
+          }
+
+          .card {
+            padding: 20px;
+            width: 188px;
+            height: 232px;
+            display: flex;
+            justify-content: flex-end;
+            border: none;
+            box-shadow: 6px -6px 24px rgba(89, 89, 89, 0.1);
+            border-radius: 10px;
+            background-image: url(../images/home/pattern.png);
+            background-position: top right;
+            background-repeat: no-repeat;
+            -webkit-background-size: 75%;
+            background-size: 75%;
+
+            .img-fluid {
+              margin-bottom: 40px;
+            }
+
+            .card-text {
+              font-family: "Muli", sans-serif;
+              font-size: 15px;
+              line-height: 19px;
+              letter-spacing: 0.1em;
+              color: #29353D;
+            }
+
+            @media (min-width: 1200px) {
+              padding: 30px;
+            }
+
+            &.bg-blue {
+              background-color: #77B8E1;
+              -webkit-box-shadow: 10px 10px 0 0 rgba(255, 255, 255, 1);
+              -moz-box-shadow: 10px 10px 0 0 rgba(255, 255, 255, 1);
+              box-shadow: 10px 10px 0 0 rgba(255, 255, 255, 1);
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          display: contents;
+          .owl-item {
+            padding: 10px;
+
+            .card {
+              width: auto!important;
+            }
+          }
+        }
+        @media (min-width: 1024px) {
+          .owl-item {
+            padding: 15px;
+            .card {
+              height: 320px;
+            }
+          }
+        }
+        @media (min-width: 1024px) {
+          .owl-item {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 155px 120px;
   }
 }

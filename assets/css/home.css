@@ -578,18 +578,13 @@ header {
   }
 }
 
-.mission .mission-description {
-  background-image: url(../images/home/logo-pattern.png);
-  background-repeat: no-repeat;
-  background-position: top left;
-  -webkit-background-size: 75%;
-  background-size: 75%;
+.mission .mission-description, .we-do .mission-description {
   padding: 75px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.mission .mission-description .title {
+.mission .mission-description .title, .we-do .mission-description .title {
   font-family: "Muli", sans-serif;
   font-weight: 900;
   font-size: 38px;
@@ -597,7 +592,7 @@ header {
   color: #29353D;
   margin-bottom: 30px;
 }
-.mission .mission-description .text {
+.mission .mission-description .text, .we-do .mission-description .text {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -605,7 +600,7 @@ header {
   color: #688DA3;
   margin-bottom: 50px;
 }
-.mission .mission-description .btn-outline-primary {
+.mission .mission-description .btn-outline-primary, .we-do .mission-description .btn-outline-primary {
   padding: 16px 25px;
   border: 1px solid #42708C !important;
   border-radius: 35px;
@@ -617,71 +612,167 @@ header {
   text-transform: uppercase;
   color: #467296;
 }
-.mission .mission-description .btn-outline-primary:hover {
+.mission .mission-description .btn-outline-primary:hover, .we-do .mission-description .btn-outline-primary:hover {
   background-color: #42708C !important;
   color: #fff !important;
 }
 @media (min-width: 768px) {
-  .mission .mission-description {
-    padding: 75px 20px;
+  .mission .mission-description, .we-do .mission-description {
+    padding: 75px 20px 50px 20px;
   }
-  .mission .mission-description .title {
+  .mission .mission-description .title, .we-do .mission-description .title {
     font-size: 45px;
   }
-  .mission .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text {
     max-width: 350px;
   }
 }
 @media (min-width: 1024px) {
-  .mission .mission-description {
+  .mission .mission-description, .we-do .mission-description {
     padding: 75px;
   }
-  .mission .mission-description .title {
-    font-size: 55px;
+  .mission .mission-description .title, .we-do .mission-description .title {
+    font-size: 50px;
   }
-  .mission .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text {
     max-width: 400px;
     font-size: 25px;
   }
-  .mission .mission-description .btn-outline-primary {
+  .mission .mission-description .btn-outline-primary, .we-do .mission-description .btn-outline-primary {
     padding: 20px 40px;
     font-size: 14px;
     line-height: 18px;
   }
 }
 @media (min-width: 1200px) {
-  .mission .mission-description {
+  .mission .mission-description, .we-do .mission-description {
     padding: 160px 0 130px 190px;
   }
-  .mission .mission-description .title {
+  .mission .mission-description .title, .we-do .mission-description .title {
     font-size: 60px;
     margin-bottom: 40px;
   }
-  .mission .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text {
     font-size: 26px;
     max-width: 410px;
     margin-bottom: 80px;
   }
 }
-.mission .mission-image {
+.mission .mission-image, .we-do .mission-image {
   z-index: 2;
 }
 @media (min-width: 768px) {
-  .mission .mission-image {
-    top: 50px;
-    position: relative;
-  }
-}
-@media (min-width: 1024px) {
-  .mission .mission-image {
-    position: relative;
+  .mission .mission-image, .we-do .mission-image {
     top: 70px;
+    position: relative;
   }
 }
 @media (min-width: 1200px) {
-  .mission .mission-image {
+  .mission .mission-image, .we-do .mission-image {
     position: relative;
     top: 89px;
+  }
+}
+
+.mission .mission-description {
+  background-image: url(../images/home/logo-pattern.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  -webkit-background-size: 75%;
+  background-size: 75%;
+}
+
+.we-do {
+  background-color: #29353D;
+  padding: 20px;
+}
+.we-do .mission-description .title {
+  color: #55A6D9;
+}
+.we-do .mission-description .text {
+  color: #FFFFFF;
+}
+.we-do .mission-description .btn-outline-primary {
+  border-color: #55A6D9 !important;
+  color: #55A6D9 !important;
+}
+.we-do .mission-description .btn-outline-primary:hover {
+  background-color: #55A6D9 !important;
+  color: #fff !important;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage {
+  padding-left: 0 !important;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item img {
+  width: fit-content;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+  padding: 20px;
+  width: 188px;
+  height: 232px;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  box-shadow: 6px -6px 24px rgba(89, 89, 89, 0.1);
+  border-radius: 10px;
+  background-image: url(../images/home/pattern.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  -webkit-background-size: 75%;
+  background-size: 75%;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .img-fluid {
+  margin-bottom: 40px;
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-text {
+  font-family: "Muli", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #29353D;
+}
+@media (min-width: 1200px) {
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+    padding: 30px;
+  }
+}
+.we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card.bg-blue {
+  background-color: #77B8E1;
+  -webkit-box-shadow: 10px 10px 0 0 white;
+  -moz-box-shadow: 10px 10px 0 0 white;
+  box-shadow: 10px 10px 0 0 white;
+}
+@media (min-width: 768px) {
+  .we-do .owl-carousel .owl-stage-outer .owl-stage {
+    display: contents;
+  }
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    padding: 10px;
+  }
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+    width: auto !important;
+  }
+}
+@media (min-width: 1024px) {
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    padding: 15px;
+  }
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+    height: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .we-do {
+    padding: 155px 120px;
   }
 }
 

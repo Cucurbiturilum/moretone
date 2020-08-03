@@ -429,6 +429,122 @@ footer .footer-navbar .privacy {
   color: #467296;
 }
 
+.drive {
+  background: linear-gradient(180deg, #55A6D9 0%, #467296 100%);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive {
+    margin-bottom: 105px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive {
+    margin-bottom: 130px;
+  }
+}
+.drive .row {
+  background-image: url("../images/what-we-do/logo-pattern-big.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 80px 20px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row {
+    padding: 80px 50px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row {
+    padding: 80px 70px;
+    -webkit-background-size: 30%;
+    background-size: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row {
+    padding: 85px 100px;
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+}
+.drive .row .drive-title {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 110%;
+  text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row .drive-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row .drive-title {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .drive-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+.drive .row .main-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row .main-text {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row .main-text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .main-text {
+    font-size: 26px;
+    max-width: 850px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .drive .row .btn-connect {
+    padding: 12px 30px;
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .btn-connect {
+    padding: 25px 80px;
+    border-radius: 45px;
+  }
+}
+
 header {
   background-image: url(../images/home/home-header-bg.png);
   -webkit-background-size: cover;
@@ -439,6 +555,75 @@ header {
 @media (max-width: 520px) {
   header {
     min-height: 300px;
+  }
+}
+
+.btn-outline-primary {
+  padding: 16px 25px;
+  border: 1px solid #42708C !important;
+  border-radius: 35px;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #467296;
+}
+.btn-outline-primary:hover {
+  background-color: #42708C !important;
+  color: #fff !important;
+}
+@media (min-width: 1024px) {
+  .btn-outline-primary .btn-outline-primary {
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+.btn-connect:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: white;
+}
+.btn-connect:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .btn-connect {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-connect {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .btn-connect {
+    font-size: 23px;
+    padding: 30px 60px;
   }
 }
 
@@ -578,13 +763,16 @@ header {
   }
 }
 
-.mission .mission-description, .we-do .mission-description {
+.mission, .we-do, .testimonials {
+  scroll-behavior: smooth;
+}
+.mission .mission-description, .we-do .mission-description, .testimonials .mission-description {
   padding: 75px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.mission .mission-description .title, .we-do .mission-description .title {
+.mission .mission-description .title, .we-do .mission-description .title, .testimonials .mission-description .title {
   font-family: "Muli", sans-serif;
   font-weight: 900;
   font-size: 38px;
@@ -592,7 +780,7 @@ header {
   color: #29353D;
   margin-bottom: 30px;
 }
-.mission .mission-description .text, .we-do .mission-description .text {
+.mission .mission-description .text, .we-do .mission-description .text, .testimonials .mission-description .text {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -600,75 +788,59 @@ header {
   color: #688DA3;
   margin-bottom: 50px;
 }
-.mission .mission-description .btn-outline-primary, .we-do .mission-description .btn-outline-primary {
-  padding: 16px 25px;
-  border: 1px solid #42708C !important;
-  border-radius: 35px;
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #467296;
-}
-.mission .mission-description .btn-outline-primary:hover, .we-do .mission-description .btn-outline-primary:hover {
-  background-color: #42708C !important;
-  color: #fff !important;
-}
 @media (min-width: 768px) {
-  .mission .mission-description, .we-do .mission-description {
+  .mission .mission-description, .we-do .mission-description, .testimonials .mission-description {
     padding: 75px 20px 50px 20px;
   }
-  .mission .mission-description .title, .we-do .mission-description .title {
+  .mission .mission-description .title, .we-do .mission-description .title, .testimonials .mission-description .title {
     font-size: 45px;
   }
-  .mission .mission-description .text, .we-do .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text, .testimonials .mission-description .text {
     max-width: 350px;
   }
 }
 @media (min-width: 1024px) {
-  .mission .mission-description, .we-do .mission-description {
+  .mission .mission-description, .we-do .mission-description, .testimonials .mission-description {
     padding: 75px;
   }
-  .mission .mission-description .title, .we-do .mission-description .title {
+  .mission .mission-description .title, .we-do .mission-description .title, .testimonials .mission-description .title {
     font-size: 50px;
   }
-  .mission .mission-description .text, .we-do .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text, .testimonials .mission-description .text {
     max-width: 400px;
     font-size: 25px;
   }
-  .mission .mission-description .btn-outline-primary, .we-do .mission-description .btn-outline-primary {
+  .mission .mission-description .btn-outline-primary, .we-do .mission-description .btn-outline-primary, .testimonials .mission-description .btn-outline-primary {
     padding: 20px 40px;
     font-size: 14px;
     line-height: 18px;
   }
 }
 @media (min-width: 1200px) {
-  .mission .mission-description, .we-do .mission-description {
-    padding: 160px 0 130px 190px;
+  .mission .mission-description, .we-do .mission-description, .testimonials .mission-description {
+    padding: 160px 0 130px 150px;
   }
-  .mission .mission-description .title, .we-do .mission-description .title {
+  .mission .mission-description .title, .we-do .mission-description .title, .testimonials .mission-description .title {
     font-size: 60px;
     margin-bottom: 40px;
   }
-  .mission .mission-description .text, .we-do .mission-description .text {
+  .mission .mission-description .text, .we-do .mission-description .text, .testimonials .mission-description .text {
     font-size: 26px;
     max-width: 410px;
     margin-bottom: 80px;
   }
 }
-.mission .mission-image, .we-do .mission-image {
+.mission .mission-image, .we-do .mission-image, .testimonials .mission-image {
   z-index: 2;
 }
 @media (min-width: 768px) {
-  .mission .mission-image, .we-do .mission-image {
+  .mission .mission-image, .we-do .mission-image, .testimonials .mission-image {
     top: 70px;
     position: relative;
   }
 }
 @media (min-width: 1200px) {
-  .mission .mission-image, .we-do .mission-image {
+  .mission .mission-image, .we-do .mission-image, .testimonials .mission-image {
     position: relative;
     top: 89px;
   }
@@ -684,7 +856,7 @@ header {
 
 .we-do {
   background-color: #29353D;
-  padding: 20px;
+  padding: 20px 0;
 }
 .we-do .mission-description .title {
   color: #55A6D9;
@@ -702,10 +874,12 @@ header {
 }
 .we-do .owl-carousel .owl-stage-outer .owl-stage {
   padding-left: 0 !important;
+  display: flex;
 }
 .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
   padding-left: 20px;
   padding-bottom: 20px;
+  margin-right: 15px;
 }
 .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item img {
   width: fit-content;
@@ -752,6 +926,7 @@ header {
   }
   .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item {
     padding: 10px;
+    margin-right: 0;
   }
   .we-do .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
     width: auto !important;
@@ -773,6 +948,178 @@ header {
 @media (min-width: 1200px) {
   .we-do {
     padding: 155px 120px;
+  }
+}
+
+.testimonials {
+  background-color: #E5F2F9;
+}
+@media (min-width: 768px) {
+  .testimonials {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonials {
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .testimonials .right-side {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .testimonials .right-side .testimonials-image {
+    left: 50px;
+    position: relative;
+  }
+}
+.testimonials .right-side .card {
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(8, 69, 118, 0.16);
+  border-radius: 15px;
+  margin: 0 15px;
+  top: -30px;
+  z-index: 2;
+}
+.testimonials .right-side .card .card-header {
+  margin-bottom: 20px;
+}
+.testimonials .right-side .card .card-body .card-title {
+  font-family: "Muli", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  color: #29353D;
+  margin-bottom: 20px;
+}
+.testimonials .right-side .card .card-body .card-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  color: #467296;
+  margin-bottom: 20px;
+}
+.testimonials .right-side .card .card-footer {
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-color: #BBDBF0 !important;
+}
+.testimonials .right-side .card .card-footer .card-text {
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.testimonials .right-side .card .card-footer .card-text:first-of-type {
+  color: #29353D;
+}
+.testimonials .right-side .card .card-footer .card-text:last-of-type {
+  color: #467296;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .testimonials .right-side .card {
+    width: 600px;
+    top: -200px;
+    margin: 0;
+  }
+  .testimonials .right-side .card .card-header {
+    width: 30%;
+  }
+  .testimonials .right-side .card .card-body .card-title {
+    font-size: 16px;
+  }
+  .testimonials .right-side .card .card-body .card-text {
+    font-size: 14px;
+  }
+  .testimonials .right-side .card .card-footer .card-text {
+    font-size: 14px;
+  }
+  .testimonials .right-side .card .card-footer .card-text:last-of-type {
+    margin-bottom: 20px;
+  }
+  .testimonials .right-side .card .card-footer .btn-outline-primary {
+    padding: 12px 25px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .testimonials .right-side .card {
+    width: 550px;
+    top: -150px;
+    margin: 0;
+  }
+  .testimonials .right-side .card .card-header {
+    width: 50%;
+  }
+  .testimonials .right-side .card .card-body .card-title {
+    font-size: 20px;
+  }
+  .testimonials .right-side .card .card-body .card-text {
+    font-size: 18px;
+  }
+  .testimonials .right-side .card .card-footer .card-text {
+    font-size: 18px;
+  }
+  .testimonials .right-side .card .card-footer .card-text:last-of-type {
+    margin-bottom: 40px;
+  }
+  .testimonials .right-side .card .card-footer .btn-outline-primary {
+    padding: 16px 25px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials .right-side .card {
+    padding: 50px;
+    width: 500px;
+    top: -250px;
+    margin: 0;
+  }
+  .testimonials .right-side .card .card-header {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .testimonials .right-side .card .card-body .card-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .testimonials .right-side .card .card-body .card-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .testimonials .right-side .card .card-footer {
+    padding-top: 30px;
+  }
+  .testimonials .right-side .card .card-footer .card-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .testimonials .right-side .card .card-footer .card-text:last-of-type {
+    margin-bottom: 80px;
+  }
+  .testimonials .right-side .card .card-footer .btn-outline-primary {
+    padding: 20px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .drive {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .drive {
+    top: -170px;
+    margin-bottom: 0;
   }
 }
 

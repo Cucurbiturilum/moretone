@@ -1,4 +1,4 @@
-@import "navbar", "footer";
+@import "navbar", "footer", "drive";
 
 header {
   background-image: url(../images/home/home-header-bg.png);
@@ -8,6 +8,76 @@ header {
   min-height: 600px;
   @media (max-width: 520px) {
     min-height: 300px;
+  }
+}
+
+.btn-outline-primary {
+  padding: 16px 25px;
+  border: 1px solid #42708C !important;
+  border-radius: 35px;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #467296;
+
+  &:hover {
+    background-color: #42708C !important;
+    color: #fff !important;
+  }
+
+  @media (min-width: 1024px) {
+    .btn-outline-primary {
+      padding: 20px 40px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: white;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  @media (min-width: 2000px) {
+    font-size: 23px;
+    padding: 30px 60px;
   }
 }
 
@@ -146,7 +216,8 @@ header {
   }
 }
 
-.mission, .we-do {
+.mission, .we-do, .testimonials {
+  scroll-behavior: smooth;
   .mission-description {
     padding: 75px 5px;
     display: flex;
@@ -169,24 +240,6 @@ header {
       line-height: 150%;
       color: #688DA3;
       margin-bottom: 50px;
-    }
-
-    .btn-outline-primary {
-      padding: 16px 25px;
-      border: 1px solid #42708C !important;
-      border-radius: 35px;
-      font-family: "Muli", sans-serif;
-      font-weight: 900;
-      font-size: 12px;
-      line-height: 15px;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: #467296;
-
-      &:hover {
-        background-color: #42708C !important;
-        color: #fff !important;
-      }
     }
 
     @media (min-width: 768px) {
@@ -219,7 +272,7 @@ header {
     }
 
     @media (min-width: 1200px) {
-      padding: 160px 0 130px 190px;
+      padding: 160px 0 130px 150px;
 
 
       .title {
@@ -261,7 +314,7 @@ header {
 
 .we-do {
   background-color: #29353D;
-  padding: 20px;
+  padding: 20px 0;
 
   .mission-description {
     .title {
@@ -287,10 +340,12 @@ header {
     .owl-stage-outer {
       .owl-stage {
         padding-left: 0 !important;
+        display: flex;
 
         .owl-item {
           padding-left: 20px;
           padding-bottom: 20px;
+          margin-right: 15px;
 
           img {
             width: fit-content;
@@ -340,15 +395,17 @@ header {
           display: contents;
           .owl-item {
             padding: 10px;
+            margin-right: 0;
 
             .card {
-              width: auto!important;
+              width: auto !important;
             }
           }
         }
         @media (min-width: 1024px) {
           .owl-item {
             padding: 15px;
+
             .card {
               height: 320px;
             }
@@ -365,5 +422,197 @@ header {
 
   @media (min-width: 1200px) {
     padding: 155px 120px;
+  }
+}
+
+.testimonials {
+  background-color: #E5F2F9;
+  @media (min-width: 768px){
+    padding-bottom: 100px;
+  }
+  @media (min-width: 1024px){
+    padding-bottom: 150px;
+  }
+  .right-side {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .testimonials-image {
+      @media (min-width: 768px) {
+        left: 50px;
+        position: relative;
+      }
+    }
+
+    .card {
+      padding: 40px 30px;
+      box-shadow: 0 4px 15px rgba(8, 69, 118, 0.16);
+      border-radius: 15px;
+      margin: 0 15px;
+      top: -30px;
+      z-index: 2;
+
+      .card-header {
+        margin-bottom: 20px;
+      }
+
+      .card-body {
+        .card-title {
+          font-family: "Muli", sans-serif;
+          font-style: italic;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 25px;
+          color: #29353D;
+          margin-bottom: 20px;
+        }
+
+        .card-text {
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 160%;
+          color: #467296;
+          margin-bottom: 20px;
+        }
+      }
+
+      .card-footer {
+        padding-top: 20px;
+        padding-bottom: 0;
+        border-color: #BBDBF0 !important;
+
+        .card-text {
+          font-family: "Muli", sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 10px;
+
+          &:first-of-type {
+            color: #29353D;
+          }
+
+          &:last-of-type {
+            color: #467296;
+            font-weight: 300;
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        width: 600px;
+        top: -200px;
+        margin: 0;
+        .card-header {
+          width: 30%;
+        }
+        .card-body {
+          .card-title {
+            font-size: 16px;
+          }
+
+          .card-text {
+            font-size: 14px;
+          }
+        }
+        .card-footer {
+          .card-text {
+            font-size: 14px;
+
+            &:last-of-type {
+              margin-bottom: 20px;
+            }
+          }
+
+          .btn-outline-primary {
+            padding: 12px 25px;
+            font-size: 10px;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        width: 550px;
+        top: -150px;
+        margin: 0;
+        .card-header {
+          width: 50%;
+        }
+        .card-body {
+          .card-title {
+            font-size: 20px;
+          }
+
+          .card-text {
+            font-size: 18px;
+          }
+        }
+        .card-footer {
+          .card-text {
+            font-size: 18px;
+
+            &:last-of-type {
+              margin-bottom: 40px;
+            }
+          }
+
+          .btn-outline-primary {
+            padding: 16px 25px;
+            font-size: 12px;
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        padding: 50px;
+        width: 500px;
+        top: -250px;
+        margin: 0;
+        .card-header {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+        .card-body {
+          .card-title {
+            font-size: 26px;
+            margin-bottom: 30px;
+          }
+
+          .card-text {
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+        }
+        .card-footer {
+          padding-top: 30px;
+
+          .card-text {
+            font-size: 20px;
+            margin-bottom: 15px;
+
+            &:last-of-type {
+              margin-bottom: 80px;
+            }
+          }
+
+          .btn-outline-primary {
+            padding: 20px 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.drive {
+  @media (max-width: 767px) {
+    border-radius: 0;
+  }
+  @media (min-width: 768px) {
+    top: -170px;
+    margin-bottom: 0;
   }
 }

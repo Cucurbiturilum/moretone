@@ -1,5 +1,6 @@
 @import "navbar", "footer", "drive";
 
+
 header {
   background-image: url(../images/home/home-header-bg.png);
   -webkit-background-size: cover;
@@ -218,6 +219,7 @@ header {
 
 .mission, .we-do, .testimonials {
   scroll-behavior: smooth;
+
   .mission-description {
     padding: 75px 5px;
     display: flex;

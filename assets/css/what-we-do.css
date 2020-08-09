@@ -435,6 +435,17 @@ footer .footer-navbar .privacy {
   overflow: hidden;
   margin-bottom: 90px;
 }
+@media (max-width: 767px) {
+  .drive {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .drive {
+    top: -100px;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 1000px) {
   .drive {
     margin-bottom: 105px;

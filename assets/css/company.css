@@ -435,6 +435,17 @@ footer .footer-navbar .privacy {
   overflow: hidden;
   margin-bottom: 90px;
 }
+@media (max-width: 767px) {
+  .drive {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .drive {
+    top: -100px;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 1000px) {
   .drive {
     margin-bottom: 105px;
@@ -718,28 +729,22 @@ header {
 }
 
 @media (min-width: 768px) {
-  .mission, .story {
+  .mission, .story, .giving-back, .team {
     padding-top: 60px;
   }
 }
 @media (min-width: 992px) {
-  .mission, .story {
+  .mission, .story, .giving-back, .team {
     padding-bottom: 170px;
   }
 }
 @media (min-width: 1024px) {
-  .mission, .story {
+  .mission, .story, .giving-back, .team {
     padding-top: 89px;
     padding-bottom: 225px;
   }
 }
-.mission .mission-description, .story .mission-description {
-  padding-top: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.mission .mission-description .title, .story .mission-description .title {
+.mission .title, .story .title, .giving-back .title, .team .title {
   font-family: "Muli", sans-serif;
   font-weight: 900;
   font-size: 38px;
@@ -747,54 +752,65 @@ header {
   color: #29353D;
   margin-bottom: 30px;
 }
-.mission .mission-description .text, .story .mission-description .text {
+@media (min-width: 768px) {
+  .mission .title, .story .title, .giving-back .title, .team .title {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  .mission .title, .story .title, .giving-back .title, .team .title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .mission .title, .story .title, .giving-back .title, .team .title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+.mission .mission-description, .story .mission-description, .giving-back .mission-description, .team .mission-description {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mission .mission-description .text, .story .mission-description .text, .giving-back .mission-description .text, .team .mission-description .text {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 150%;
-  color: #688DA3;
   margin-bottom: 40px;
 }
-.mission .mission-description .text:first-of-type, .story .mission-description .text:first-of-type {
+.mission .mission-description .text:first-of-type, .story .mission-description .text:first-of-type, .giving-back .mission-description .text:first-of-type, .team .mission-description .text:first-of-type {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .mission .mission-description, .story .mission-description {
+  .mission .mission-description, .story .mission-description, .giving-back .mission-description, .team .mission-description {
     padding: 75px 20px 50px 20px;
   }
-  .mission .mission-description .title, .story .mission-description .title {
-    font-size: 45px;
-  }
-  .mission .mission-description .text, .story .mission-description .text {
+  .mission .mission-description .text, .story .mission-description .text, .giving-back .mission-description .text, .team .mission-description .text {
     max-width: 350px;
   }
 }
 @media (min-width: 1024px) {
-  .mission .mission-description, .story .mission-description {
+  .mission .mission-description, .story .mission-description, .giving-back .mission-description, .team .mission-description {
     padding: 75px;
   }
-  .mission .mission-description .title, .story .mission-description .title {
-    font-size: 50px;
-  }
-  .mission .mission-description .text, .story .mission-description .text {
+  .mission .mission-description .text, .story .mission-description .text, .giving-back .mission-description .text, .team .mission-description .text {
     max-width: 400px;
     font-size: 25px;
   }
 }
 @media (min-width: 1200px) {
-  .mission .mission-description, .story .mission-description {
+  .mission .mission-description, .story .mission-description, .giving-back .mission-description, .team .mission-description {
     padding: 160px 0 130px 150px;
   }
-  .mission .mission-description .title, .story .mission-description .title {
-    font-size: 60px;
-    margin-bottom: 40px;
-  }
-  .mission .mission-description .text, .story .mission-description .text {
+  .mission .mission-description .text, .story .mission-description .text, .giving-back .mission-description .text, .team .mission-description .text {
     font-size: 26px;
     max-width: 410px;
   }
 }
-.mission .mission-image, .story .mission-image {
+.mission .mission-image, .story .mission-image, .giving-back .mission-image, .team .mission-image {
   max-width: 700px;
 }
 
@@ -804,6 +820,9 @@ header {
   background-position: top left;
   -webkit-background-size: 75%;
   background-size: 75%;
+}
+.mission .mission-description .text {
+  color: #688DA3;
 }
 
 .story {
@@ -823,6 +842,7 @@ header {
 .story .mission-description .text {
   font-size: 20px;
   max-width: 350px;
+  color: #fff;
 }
 .story .mission-description .text:first-of-type {
   margin-bottom: 20px;
@@ -919,9 +939,247 @@ header {
 
 .giving-back {
   background-color: #E5F2F9;
+  padding-bottom: 90px;
+}
+.giving-back .mission-description .subtitle, .giving-back .mission-description .text {
+  max-width: 480px !important;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .giving-back .mission-description .subtitle, .giving-back .mission-description .text {
+    max-width: 400px !important;
+  }
+}
+.giving-back .mission-description .text {
+  color: #29353D;
+  font-size: 20px;
+}
+.giving-back .mission-description .subtitle {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+  color: #467296;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .giving-back .mission-description .subtitle {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .giving-back .mission-description .subtitle {
+    font-size: 30px;
+  }
+}
+.giving-back .mission-description.article {
+  padding: 0 15px;
+}
+@media (max-width: 767px) {
+  .giving-back .mission-description.article .collapse {
+    max-height: 90px;
+    overflow: hidden;
+  }
+  .giving-back .mission-description.article .collapse.show {
+    max-height: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .giving-back .mission-description.article .collapse span br {
+    display: none;
+  }
+}
+.giving-back .mission-description.article .collapse-toggle {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #467296;
+  margin-top: 32px;
+  text-decoration: none;
+}
+.giving-back .mission-description.article .collapse-toggle .arrow {
+  border: solid #467296;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.giving-back .mission-description.article .collapse-toggle .arrow.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.giving-back .mission-description.article .collapse-toggle .arrow.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.giving-back .mission-description.article .collapse-toggle[aria-expanded=false] .arrow-up {
+  display: none;
+}
+.giving-back .mission-description.article .collapse-toggle[aria-expanded=false] .arrow-down {
+  display: inline-block;
+}
+.giving-back .mission-description.article .collapse-toggle[aria-expanded=true] .arrow-up {
+  display: inline-block;
+}
+.giving-back .mission-description.article .collapse-toggle[aria-expanded=true] .arrow-down {
+  display: none;
+}
+@media (min-width: 768px) {
+  .giving-back .mission-description.article .text {
+    max-width: 100% !important;
+  }
+  .giving-back .mission-description.article .text span {
+    max-width: 450px;
+  }
+}
+.giving-back .giving-back-carousel {
+  margin-bottom: 66px;
+}
+.giving-back .giving-back-carousel .owl-stage-outer .owl-stage {
+  padding-left: 0 !important;
+  position: relative;
+}
+.giving-back .giving-back-carousel .owl-stage-outer .owl-stage .owl-item {
+  opacity: 0.6;
+}
+.giving-back .giving-back-carousel .owl-stage-outer .owl-stage .owl-item.active {
+  opacity: 1;
 }
 .giving-back .giving-back-carousel .owl-nav {
-  display: block !important;
+  position: absolute;
+  bottom: -25px;
+  right: 35%;
+  display: inline-flex;
+}
+.giving-back .giving-back-carousel .owl-nav.disabled {
+  display: none;
+}
+.giving-back .giving-back-carousel .owl-nav .owl-prev, .giving-back .giving-back-carousel .owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+  background-color: #fff;
+  margin: 0 10px;
+  color: #29353D;
+}
+.giving-back .giving-back-carousel .owl-nav .owl-prev:focus, .giving-back .giving-back-carousel .owl-nav .owl-next:focus {
+  outline: none !important;
+}
+.giving-back .giving-back-carousel .owl-nav .owl-prev:hover, .giving-back .giving-back-carousel .owl-nav .owl-next:hover {
+  color: #29353D;
+}
+@media (min-width: 1200px) {
+  .giving-back .giving-back-carousel .owl-nav {
+    bottom: -31px;
+    right: 25%;
+  }
+  .giving-back .giving-back-carousel .owl-nav .owl-prev, .giving-back .giving-back-carousel .owl-nav .owl-next {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+}
+.giving-back .giving-back-carousel .owl-dots .owl-dot span {
+  background-color: #BBDBF0;
+}
+.giving-back .giving-back-carousel .owl-dots .owl-dot.active span {
+  background-color: #084576;
+}
+.giving-back .giving-back-carousel .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+.team {
+  padding: 90px 0;
+}
+.team .title {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .team .title {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  .team .title {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .team .title {
+    margin-bottom: 80px;
+  }
+}
+.team .card {
+  border: none;
+  margin-bottom: 35px;
+}
+@media (min-width: 1024px) {
+  .team .card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .team .card {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+.team .card .card-img-top {
+  box-shadow: 10px 10px 0 0 #E5F2F9;
+  border-radius: 10px;
+}
+.team .card .card-body {
+  padding: 20px 0;
+}
+.team .card .card-body .card-title {
+  font-family: "Muli", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+  color: #29353D;
+  margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .team .card .card-body .card-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+.team .card .card-body .card-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #90AAC0;
+}
+@media (min-width: 768px) {
+  .team {
+    padding: 90px 50px 150px 50px;
+  }
+}
+@media (min-width: 992px) {
+  .team {
+    padding: 90px 100px 190px 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .team {
+    padding: 100px 130px 200px 130px;
+  }
+}
+@media (min-width: 1200px) {
+  .team {
+    padding: 100px 180px 200px 180px;
+  }
 }
 
 /*# sourceMappingURL=company.css.map */

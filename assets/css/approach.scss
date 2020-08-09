@@ -405,9 +405,13 @@ header {
         border-color: transparent;
         background-color: #fff;
         margin: 0 10px;
+        color: #29353D;
 
         &:focus {
           outline: none !important;
+        }
+        &:hover{
+          color: #29353D;
         }
       }
 

@@ -436,6 +436,17 @@ footer .footer-navbar .privacy {
   overflow: hidden;
   margin-bottom: 90px;
 }
+@media (max-width: 767px) {
+  .drive {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .drive {
+    top: -100px;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 1000px) {
   .drive {
     margin-bottom: 105px;
@@ -1100,9 +1111,13 @@ header {
   border-color: transparent;
   background-color: #fff;
   margin: 0 10px;
+  color: #29353D;
 }
 .testimonials .testimonials-image #owlCarouselNav .owl-prev:focus, .testimonials .testimonials-image #owlCarouselNav .owl-next:focus {
   outline: none !important;
+}
+.testimonials .testimonials-image #owlCarouselNav .owl-prev:hover, .testimonials .testimonials-image #owlCarouselNav .owl-next:hover {
+  color: #29353D;
 }
 @media (min-width: 1200px) {
   .testimonials .testimonials-image #owlCarouselNav {

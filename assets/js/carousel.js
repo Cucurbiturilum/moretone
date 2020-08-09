@@ -25,11 +25,24 @@ $(document).ready(function () {
         }
     });
     $('.giving-back-carousel').owlCarousel({
-        stagePadding: 100,
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 1,
+        responsive:{
+            0:{
+                dots: true,
+                nav: false,
+                margin: 10,
+                stagePadding: 20,
+                loop: true,
+                items: 1,
+            },
+            768:{
+                dots: false,
+                nav: true,
+                margin: 50,
+                stagePadding: 100,
+                loop: true,
+                items: 1,
+            }
+        }
     });
     $('.testimonials-carousel').owlCarousel({
         navContainer: '#owlCarouselNav',

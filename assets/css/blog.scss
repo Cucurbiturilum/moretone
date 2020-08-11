@@ -1,0 +1,231 @@
+@import "navbar", "drive", "footer";
+
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: white;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  @media (min-width: 2000px) {
+    font-size: 23px;
+    padding: 30px 60px;
+  }
+}
+
+.banner {
+  background-image: url(../images/blog/logo-pattern.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  background-color: #29353D;
+  min-height: 250px;
+  display: flex;
+  align-items: flex-end;
+
+  @media (min-width: 768px) {
+    padding: 60px 30px;
+    min-height: 300px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 70px 60px;
+    min-height: 400px;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 85px 80px;
+    min-height: 450px;
+  }
+
+  .banner-title {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 75px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 100px;
+    }
+  }
+
+  .banner-subtitle {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #55A6D9;
+    line-height: 120%;
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.blog-articles {
+  padding: 45px 15px 109px 15px;
+  @media (min-width: 768px) {
+    padding-bottom: 180px;
+  }
+  @media (min-width: 1200px) {
+    padding: 100px 120px 220px 120px;
+  }
+
+  .card {
+    margin-bottom: 75px;
+    @media (min-width: 1024px) {
+      margin: 0 5px 100px 5px;
+    }
+
+    .card-img-top {
+      border-radius: 10px;
+    }
+
+    .card-body {
+      padding: 25px 0;
+
+      .card-title {
+        font-family: 'Muli', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 25px;
+        color: #29353D;
+        margin-bottom: 15px;
+
+        &:hover {
+          color: #6B8EAB;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 23px;
+          line-height: 30px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 26px;
+          line-height: 33px;
+        }
+      }
+
+      .card-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 160%;
+        color: #467296;
+        margin-bottom: 30px;
+
+        &:first-of-type {
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #55A6D9;
+            margin: 0 10px;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .card-link {
+        font-family: 'Muli', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        color: #467296;
+
+        &:hover {
+          color: #77B8E1;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    .page-item {
+      .page-link {
+        border: 2px solid transparent;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 5px;
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        padding: 0;
+
+        @media (max-width: 768px) {
+          width: 34px;
+          height: 34px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+
+        &.current {
+          background-color: #BBDBF0;
+        }
+
+        &:hover, {
+          border-color: #BBDBF0;
+          background-color: transparent;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

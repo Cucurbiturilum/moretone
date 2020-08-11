@@ -1,0 +1,294 @@
+@import "navbar", "footer";
+
+.banner, .contact-us {
+  background-color: #55A6D9;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px 0 50px 20px;
+
+  @media (max-width: 768px) {
+    min-height: 405px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 60px 0 60px 30px;
+    min-height: 300px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    padding: 70px 0 70px 60px;
+    min-height: 490px;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 85px 0 85px 80px;
+    min-height: 490px;
+  }
+
+  .banner-title {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 75px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 100px;
+    }
+  }
+
+  .banner-subtitle {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #29353D;
+    line-height: 120%;
+    margin-bottom: 0;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 30px;
+    }
+  }
+
+  .banner-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+    @media (min-width: 1024px) and (max-width: 1300px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.contact-us {
+  min-height: auto;
+  margin-bottom: 0;
+
+  .row {
+    & > div:nth-of-type(2) {
+      background-image: url(../images/connect/logo-pattern.png);
+      background-size: contain;
+      background-position: top right;
+      background-repeat: no-repeat;
+      align-self: stretch;
+
+    }
+  }
+
+  .left-side {
+    padding-right: 20px;
+
+    form {
+      box-shadow: 0 4px 15px rgba(8, 69, 118, 0.16);
+      border-radius: 15px;
+      padding: 50px 20px;
+
+      .form-group {
+        position: relative;
+        margin-bottom: 20px;
+
+        .form-control {
+          border: 1px solid #E6E6E6;
+          border-radius: 10px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 160%;
+          color: #084576;
+          padding: 25px 15px;
+          resize: none;
+
+          &::placeholder {
+            color: #467296;
+            font-weight: 300;
+          }
+
+          &:focus {
+            border-color: #084576;
+            outline: none;
+            box-shadow: none;
+            resize: vertical;
+          }
+
+          &:required + .form-control-label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            background-color: #fff;
+            left: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 8px;
+            color: #467296;
+            margin-bottom: 0;
+          }
+
+          & + .form-control-label, &:invalid + .form-control-label {
+            display: none;
+          }
+
+          &:focus + .form-control-label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            background-color: #fff;
+            left: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 8px;
+            color: #467296;
+            margin-bottom: 0;
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+
+      .policy-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        color: #467296;
+        margin-bottom: 40px;
+
+        a {
+          color: #467296;
+        }
+      }
+
+      .btn-connect {
+        padding: 18px 40px;
+        background-color: #467296;
+        border-radius: 29px;
+        color: #fff;
+        font-family: "Muli", sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+
+        &:hover {
+          color: #467296;
+          background-color: transparent;
+          border-color: #467296;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        @media (max-width: 767px) {
+          border-radius: 35px;
+          font-size: 12px;
+          line-height: 15px;
+          width: 184px;
+          padding: 16px 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+          font-size: 12px;
+          padding: 12px 0;
+          width: 100%;
+        }
+
+        @media (min-width: 2000px) {
+          font-size: 23px;
+          padding: 30px 60px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        padding: 50px;
+      }
+    }
+  }
+
+  .right-side {
+    @media (min-width: 1024px) {
+      padding-left: 40px;
+    }
+    @media (min-width: 1200px) {
+      padding-left: 60px;
+    }
+
+    .banner-subtitle {
+      margin-top: 90px;
+      margin-bottom: 40px;
+      @media (min-width: 1200px) {
+        margin-top: 40px;
+        margin-bottom: 70px;
+      }
+    }
+
+    .contact-label {
+      font-family: ' Muli', sans-serif;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #55A6D9;
+      margin-bottom: 10px;
+      @media (min-width: 768px) {
+        font-size: 13px;
+        line-height: 17px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    .contact-link {
+      font-family: 'Muli', sans-serif;
+      font-weight: 900;
+      line-height: 110%;
+      color: #467296;
+      margin-bottom: 45px;
+      font-size: 28px;
+      @media (min-width: 768px) {
+        font-size: 22px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 32px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 48px;
+        line-height: 120%;
+      }
+    }
+  }
+}

@@ -156,6 +156,12 @@
   background-color: transparent;
   border-color: white;
 }
+@media (max-width: 767px) {
+  .navbar .btn-connect:hover {
+    color: #55A6D9;
+    border-color: #55A6D9;
+  }
+}
 .navbar .btn-connect:focus {
   outline: none;
   box-shadow: none;
@@ -263,6 +269,202 @@
     color: #467296;
     background-color: transparent;
     border-color: #467296;
+  }
+}
+
+.drive {
+  background: linear-gradient(180deg, #55A6D9 0%, #467296 100%);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+@media (max-width: 767px) {
+  .drive {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .drive {
+    top: -100px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive {
+    margin-bottom: 105px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive {
+    margin-bottom: 130px;
+  }
+}
+.drive .row {
+  background-image: url("../images/what-we-do/logo-pattern-big.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 80px 20px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row {
+    padding: 80px 50px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row {
+    padding: 80px 70px;
+    -webkit-background-size: 30%;
+    background-size: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row {
+    padding: 85px 100px;
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+}
+.drive .row .drive-title {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 110%;
+  text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row .drive-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row .drive-title {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .drive-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+.drive .row .main-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .drive .row .main-text {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .drive .row .main-text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .main-text {
+    font-size: 26px;
+    max-width: 850px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .drive .row .btn-connect {
+    padding: 12px 30px;
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .drive .row .btn-connect {
+    padding: 25px 80px;
+    border-radius: 45px;
+  }
+}
+
+.btn-outline-primary {
+  padding: 16px 25px;
+  border: 1px solid #42708C !important;
+  border-radius: 35px;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #467296;
+}
+.btn-outline-primary:hover {
+  background-color: #42708C !important;
+  color: #fff !important;
+}
+@media (min-width: 1024px) {
+  .btn-outline-primary .btn-outline-primary {
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+.btn-connect:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: white;
+}
+.btn-connect:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .btn-connect {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-connect {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .btn-connect {
+    font-size: 23px;
+    padding: 30px 60px;
   }
 }
 
@@ -427,178 +629,6 @@ footer .footer-navbar .privacy {
   line-height: 150%;
   letter-spacing: 0.05em;
   color: #467296;
-}
-
-.drive {
-  background: linear-gradient(180deg, #55A6D9 0%, #467296 100%);
-  border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: 90px;
-}
-@media (max-width: 767px) {
-  .drive {
-    border-radius: 0;
-  }
-}
-@media (min-width: 768px) {
-  .drive {
-    top: -100px;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .drive {
-    margin-bottom: 105px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .drive {
-    margin-bottom: 120px;
-  }
-}
-@media (min-width: 1200px) {
-  .drive {
-    margin-bottom: 130px;
-  }
-}
-.drive .row {
-  background-image: url("../images/what-we-do/logo-pattern-big.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  -webkit-background-size: 50%;
-  background-size: 50%;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  padding: 80px 20px;
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .drive .row {
-    padding: 80px 50px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .drive .row {
-    padding: 80px 70px;
-    -webkit-background-size: 30%;
-    background-size: 30%;
-  }
-}
-@media (min-width: 1200px) {
-  .drive .row {
-    padding: 85px 100px;
-    -webkit-background-size: auto;
-    background-size: auto;
-  }
-}
-.drive .row .drive-title {
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  font-size: 35px;
-  line-height: 110%;
-  text-shadow: 0 1px 1px rgba(41, 53, 61, 0.3);
-  margin-bottom: 30px;
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .drive .row .drive-title {
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .drive .row .drive-title {
-    font-size: 55px;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .drive .row .drive-title {
-    font-size: 60px;
-    margin-bottom: 40px;
-  }
-}
-.drive .row .main-text {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 160%;
-  margin-bottom: 30px;
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .drive .row .main-text {
-    font-size: 22px;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .drive .row .main-text {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .drive .row .main-text {
-    font-size: 26px;
-    max-width: 850px;
-    margin-bottom: 60px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .drive .row .btn-connect {
-    padding: 12px 30px;
-    width: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .drive .row .btn-connect {
-    padding: 25px 80px;
-    border-radius: 45px;
-  }
-}
-
-.btn-connect {
-  padding: 18px 40px;
-  background-color: #FFFFFF;
-  border-radius: 29px;
-  color: #467296;
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  border: 2px solid transparent;
-}
-.btn-connect:hover {
-  color: #FFFFFF;
-  background-color: transparent;
-  border-color: white;
-}
-.btn-connect:focus {
-  outline: none;
-  box-shadow: none;
-}
-@media (max-width: 767px) {
-  .btn-connect {
-    border-radius: 35px;
-    font-size: 12px;
-    line-height: 15px;
-    width: 184px;
-    padding: 16px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .btn-connect {
-    font-size: 12px;
-    padding: 12px 0;
-    width: 100%;
-  }
-}
-@media (min-width: 2000px) {
-  .btn-connect {
-    font-size: 23px;
-    padding: 30px 60px;
-  }
 }
 
 header {

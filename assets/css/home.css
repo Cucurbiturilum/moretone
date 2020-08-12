@@ -156,6 +156,12 @@
   background-color: transparent;
   border-color: white;
 }
+@media (max-width: 767px) {
+  .navbar .btn-connect:hover {
+    color: #55A6D9;
+    border-color: #55A6D9;
+  }
+}
 .navbar .btn-connect:focus {
   outline: none;
   box-shadow: none;

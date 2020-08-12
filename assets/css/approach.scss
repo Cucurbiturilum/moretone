@@ -1,4 +1,4 @@
-@import "navbar", "footer", "drive", "testimonials";
+@import "navbar", "footer", "drive", "buttons", "testimonials";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 header {
@@ -9,76 +9,6 @@ header {
   min-height: 400px;
   @media (max-width: 520px) {
     min-height: 450px;
-  }
-}
-
-.btn-outline-primary {
-  padding: 16px 25px;
-  border: 1px solid #42708C !important;
-  border-radius: 35px;
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #467296;
-
-  &:hover {
-    background-color: #42708C !important;
-    color: #fff !important;
-  }
-
-  @media (min-width: 1024px) {
-    .btn-outline-primary {
-      padding: 20px 40px;
-      font-size: 14px;
-      line-height: 18px;
-    }
-  }
-}
-
-.btn-connect {
-  padding: 18px 40px;
-  background-color: #FFFFFF;
-  border-radius: 29px;
-  color: #467296;
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  border: 2px solid transparent;
-
-  &:hover {
-    color: #FFFFFF;
-    background-color: transparent;
-    border-color: white;
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  @media (max-width: 767px) {
-    border-radius: 35px;
-    font-size: 12px;
-    line-height: 15px;
-    width: 184px;
-    padding: 16px 0;
-  }
-
-  @media (min-width: 768px) and (max-width: 992px) {
-    font-size: 12px;
-    padding: 12px 0;
-    width: 100%;
-  }
-
-  @media (min-width: 2000px) {
-    font-size: 23px;
-    padding: 30px 60px;
   }
 }
 
@@ -242,9 +172,9 @@ header {
     padding-top: 60px;
   }
   @media (min-width: 992px) {
-    padding-bottom: 170px;
+    padding-bottom: 100px;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     padding-top: 89px;
     padding-bottom: 225px;
   }
@@ -338,7 +268,8 @@ header {
       }
     }
     .embrace-pages {
-      margin-bottom: -60px;
+      bottom: -10%;
+      position: relative;
     }
     .btn-embrace-demo {
       font-size: 14px;
@@ -354,7 +285,8 @@ header {
     }
 
     .embrace-pages {
-      margin-bottom: -80px;
+      bottom: -15%;
+      position: relative;
     }
   }
 
@@ -373,13 +305,14 @@ header {
     }
 
     .embrace-pages {
-      margin-bottom: -100px;
+      bottom: -20%;
+      position: relative;
     }
   }
 }
 
 .testimonials {
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding-bottom: 200px;
   }
 
@@ -410,7 +343,8 @@ header {
         &:focus {
           outline: none !important;
         }
-        &:hover{
+
+        &:hover {
           color: #29353D;
         }
       }

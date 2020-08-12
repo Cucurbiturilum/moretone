@@ -1,0 +1,46 @@
+.btn-connect {
+  padding: 18px 40px;
+  background-color: #FFFFFF;
+  border-radius: 29px;
+  color: #467296;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+.btn-connect:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: white;
+}
+.btn-connect:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .btn-connect {
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 184px;
+    padding: 16px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-connect {
+    font-size: 12px;
+    padding: 12px 0;
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .btn-connect {
+    font-size: 23px;
+    padding: 30px 60px;
+  }
+}
+
+/*# sourceMappingURL=buttons.css.map */

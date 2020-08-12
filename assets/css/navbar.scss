@@ -166,6 +166,10 @@
       color: #FFFFFF;
       background-color: transparent;
       border-color: white;
+      @media (max-width: 767px) {
+        color: #55A6D9;
+        border-color: #55A6D9;
+      }
     }
 
     &:focus {

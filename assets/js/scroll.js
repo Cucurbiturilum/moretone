@@ -1,2 +1,3 @@
-AOS.init();
-AOS.refresh();
+$(document).ready(function () {
+    AOS.init();
+});
